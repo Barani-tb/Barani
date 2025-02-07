@@ -1,61 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-
-        .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 32px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            backgrund-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
-    <h1>727723EUIT028</h1>
-    <p>Baranitharan T</p>
-    <button class="btn">Click Me</button>
-</div>
-
+  <div class="login-container">
+    <form action="#" method="post" class="login-form">
+      <h2>Login</h2>
+      
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+      <button type="submit" class="submit-btn">Login</button>
+      
+      <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+    </form>
+  </div>
 </body>
-</html> 
+</html>
